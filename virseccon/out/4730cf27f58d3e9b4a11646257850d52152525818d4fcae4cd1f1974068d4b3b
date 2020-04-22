@@ -1,0 +1,75 @@
+* Rebuilt URL to: https://m.yahoo.com/
+*   Trying 115.178.9.18...
+* TCP_NODELAY set
+* Connected to m.yahoo.com (115.178.9.18) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/cert.pem
+  CApath: none
+* TLSv1.2 (OUT), TLS handshake, Client hello (1):
+} [217 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server hello (2):
+{ [89 bytes data]
+* TLSv1.2 (IN), TLS handshake, Certificate (11):
+{ [3544 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+{ [300 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server finished (14):
+{ [4 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+} [37 bytes data]
+* TLSv1.2 (OUT), TLS change cipher, Client hello (1):
+} [1 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Finished (20):
+} [16 bytes data]
+* TLSv1.2 (IN), TLS change cipher, Client hello (1):
+{ [1 bytes data]
+* TLSv1.2 (IN), TLS handshake, Finished (20):
+{ [16 bytes data]
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: CN=m.yahoo.com
+*  start date: Mar 22 22:50:30 2020 GMT
+*  expire date: Apr 21 22:50:30 2021 GMT
+*  issuer: C=AU; ST=VIC; L=MELBOURNE; O=Seek Limited; OU=cbf12cd4790c9f5059bd5d1845090008; CN=ca.seek.goskope.com; emailAddress=certadmin@netskope.com
+*  SSL certificate verify ok.
+> GET / HTTP/1.1
+> Host: m.yahoo.com
+> User-Agent: curl/7.54.0
+> Accept: */*
+> 
+< HTTP/1.1 301 Redirect
+< Date: Tue, 21 Apr 2020 22:57:23 GMT
+< Strict-Transport-Security: max-age=15552000
+< Server: ATS
+< Cache-Control: no-store
+< Location: https://www.yahoo.com/
+< Content-Type: text/html
+< Content-Language: en
+< Content-Length: 304
+< Referrer-Policy: no-referrer-when-downgrade
+< Age: 2
+< Connection: keep-alive
+< Expect-CT: max-age=31536000, report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only"
+< X-XSS-Protection: 1; mode=block
+< X-Content-Type-Options: nosniff
+< 
+{ [304 bytes data]
+* Connection #0 to host m.yahoo.com left intact
+<HTML>
+<HEAD>
+<TITLE>Document Has Moved</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="white" FGCOLOR="black">
+<H1>Document Has Moved</H1>
+<HR>
+
+<FONT FACE="Helvetica,Arial"><B>
+Description: The document you requested has moved to a new location.  The new location is "https://www.yahoo.com/".
+</B></FONT>
+<HR>
+</BODY>

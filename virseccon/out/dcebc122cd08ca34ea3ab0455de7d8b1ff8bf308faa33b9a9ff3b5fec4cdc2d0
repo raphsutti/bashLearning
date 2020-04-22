@@ -1,0 +1,65 @@
+* Rebuilt URL to: https://www.yahoo.com/
+*   Trying 106.10.250.10...
+* TCP_NODELAY set
+* Connected to www.yahoo.com (106.10.250.10) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/cert.pem
+  CApath: none
+* TLSv1.2 (OUT), TLS handshake, Client hello (1):
+} [219 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server hello (2):
+{ [102 bytes data]
+* TLSv1.2 (IN), TLS handshake, Certificate (11):
+{ [3043 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+{ [333 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server finished (14):
+{ [4 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+} [70 bytes data]
+* TLSv1.2 (OUT), TLS change cipher, Client hello (1):
+} [1 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Finished (20):
+} [16 bytes data]
+* TLSv1.2 (IN), TLS change cipher, Client hello (1):
+{ [1 bytes data]
+* TLSv1.2 (IN), TLS handshake, Finished (20):
+{ [16 bytes data]
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: C=US; ST=California; L=Sunnyvale; O=Oath Inc; CN=*.www.yahoo.com
+*  start date: Jan 20 00:00:00 2020 GMT
+*  expire date: Jul 18 12:00:00 2020 GMT
+*  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=DigiCert SHA2 High Assurance Server CA
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x7fedc0006600)
+> GET / HTTP/2
+> Host: www.yahoo.com
+> User-Agent: curl/7.54.0
+> Accept: */*
+> 
+* Connection state changed (MAX_CONCURRENT_STREAMS updated)!
+< HTTP/2 302 
+< date: Tue, 21 Apr 2020 22:57:23 GMT
+< strict-transport-security: max-age=31536000
+< server: ATS
+< cache-control: no-store
+< content-type: text/html
+< content-language: en
+< content-security-policy: frame-ancestors 'self' https://*.techcrunch.com https://*.yahoo.com https://*.aol.com https://*.huffingtonpost.com https://*.oath.com https://*.verizonmedia.com https://*.publishing.oath.com; sandbox allow-forms allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox allow-presentation; report-uri https://csp.yahoo.com/beacon/csp?src=ats&site=frontpage&region=US&lang=en-US&device=desktop&yrid=&partner=;
+< x-frame-options: SAMEORIGIN
+< x-xss-protection: 1; report="https://csp.yahoo.com/beacon/csp?src=fp-hpkp-www"
+< location: https://au.yahoo.com/?p=us
+< set-cookie: RRC=st=1587509843&cnt=1; expires=Tue, 21-Apr-2020 22:57:53 GMT; path=/; domain=.www.yahoo.com; HttpOnly
+< content-length: 17
+< 
+{ [17 bytes data]
+* Connection #0 to host www.yahoo.com left intact
+Regional Redirect

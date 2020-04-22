@@ -1,0 +1,61 @@
+* Rebuilt URL to: https://shop.yahoo.com/
+*   Trying 98.136.103.24...
+* TCP_NODELAY set
+* Connected to shop.yahoo.com (98.136.103.24) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/cert.pem
+  CApath: none
+* TLSv1.2 (OUT), TLS handshake, Client hello (1):
+} [220 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server hello (2):
+{ [102 bytes data]
+* TLSv1.2 (IN), TLS handshake, Certificate (11):
+{ [3829 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+{ [333 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server finished (14):
+{ [4 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+} [70 bytes data]
+* TLSv1.2 (OUT), TLS change cipher, Client hello (1):
+} [1 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Finished (20):
+} [16 bytes data]
+* TLSv1.2 (IN), TLS change cipher, Client hello (1):
+{ [1 bytes data]
+* TLSv1.2 (IN), TLS handshake, Finished (20):
+{ [16 bytes data]
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: C=US; ST=California; L=Sunnyvale; O=Oath Inc; CN=src1.yahoo.com
+*  start date: Feb 25 00:00:00 2020 GMT
+*  expire date: Aug 23 12:00:00 2020 GMT
+*  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=DigiCert SHA2 High Assurance Server CA
+*  SSL certificate verify ok.
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x7f8730806600)
+> GET / HTTP/2
+> Host: shop.yahoo.com
+> User-Agent: curl/7.54.0
+> Accept: */*
+> 
+* Connection state changed (MAX_CONCURRENT_STREAMS updated)!
+< HTTP/2 301 
+< date: Tue, 21 Apr 2020 22:57:26 GMT
+< p3p: policyref="https://policies.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+< cache-control: max-age=3600, public
+< location: https://shopping.yahoo.com/
+< content-length: 0
+< content-type: text/html; charset=UTF-8
+< age: 0
+< strict-transport-security: max-age=31536000
+< server: ATS
+< 
+{ [0 bytes data]
+* Connection #0 to host shop.yahoo.com left intact
